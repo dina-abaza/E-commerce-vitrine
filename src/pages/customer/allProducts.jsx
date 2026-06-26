@@ -49,9 +49,9 @@ export default function AllProducts() {
         <p className="text-center text-gray-500">لا توجد منتجات</p>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {products.map((product) => (
-          <div className="relative group bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+          <div className="relative group bg-white rounded-lg shadow-md overflow-hidden cursor-pointer w-full sm:w-64">
 
             <img
               src={product.image || "https://via.placeholder.com/300"}

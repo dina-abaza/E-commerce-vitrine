@@ -30,11 +30,11 @@ function OffersPage() {
 
   return (
     <div className="animate-slideInFromLeft p-6 m-10 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {products.map((product) => (
-          <div 
-            key={product._id} 
-            className="relative group bg-white rounded-lg shadow-md overflow-hidden cursor-pointer h-full flex flex-col"
+          <div
+            key={product._id}
+            className="relative group bg-white rounded-lg shadow-md overflow-hidden cursor-pointer h-full flex flex-col w-full sm:w-64"
           >
             {/* حاوية الصورة */}
             <div className="relative h-48 w-full overflow-hidden">
